@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Top Banner -->
+    <div id="banner" class="bg-gray-800 text-white text-center py-2 text-sm">
+        Sign Up and <strong>GET 20% OFF</strong> for your first Order
+        <span id="cancel" class="m-12" style=" cursor: pointer;border: white 2px ;">X</span>
+    </div>
+     <!-- navbar -->
+    <div class="sticky top-0 z-50 bg-white p-3 z-50" style="background-color: black;">
+        <div class="m-5 flex justify-between text-white">
+            <div>
+                <h1 class="text-3xl font-bold">NOSTRA</h1>
+            </div>
+            <div id="menu" class="md:hidden flex items-center hover:border-b-2 border-black" style="cursor: pointer;"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <div class=" hidden md:flex items-center gap-6" style="cursor: pointer;">
+                <a class="hover:border-b-2 border-white" href="index.html">Home</a>
+                <a class="hover:border-b-2 border-white" href="index.html">New Arrival</a>
+                <a class="hover:border-b-2 border-white" href="index.html">Most Wanted</a>
+                <a class="hover:border-b-2 border-white" href="collection.html">Collections</a>
+                <a class="hover:border-b-2 border-white" href="contact.html">Contact Us</a>
+            </div>
+
+        </div>
+    </div>
+     <!-- side navbar -->
+    <div id="sidenavbar" class=" bg-black text-white fixed z-50 transition-all duration=2000"
+        style="width: 50%; height: 100vh; top: 0;right:100%;">
+        <div class="text-right mr-5 mt-5" style="cursor: pointer;">
+            <p id="cancel1">X</p>
+        </div>
+        <div class="flex flex-col gap-10 items-center">
+            <a class="m-3" href="index.html">Home</a>
+            <a class="m-3" href="#newarrivals">New Arrival</a>
+            <a class="m-3" href="#mostwanted">Most Wanted</a>
+            <a class="m-3" href="collection.html">Collections</a>
+            <a class="m-3" href="contact.html">Contact Us</a>
+
+        </div>
+    </div>
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-6 border-b-2 border-b-blue-500">
+      <h1 class="text-3xl font-bold text-gray-800">Contact Us</h1>
+      <p class="text-gray-500 mt-1">We'd love to hear from you!</p>
+    </div>
+  </header>
+
+  <!-- Contact Form Section -->
+  <main class="max-w-3xl mx-auto bg-white mt-10 p-8 rounded-lg shadow-md border border-gray-200">
+    <form class="space-y-6">
+      <div>
+        <label for="name" class="block text-gray-700 font-medium">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Jagan"
+               class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      </div>
+
+      <div>
+        <label for="email" class="block text-gray-700 font-medium">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jagan@example.com"
+               class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      </div>
+
+      <div>
+        <label for="message" class="block text-gray-700 font-medium">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                  class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-8">
+    © 2025 NOSTRA. All rights reserved.
+  </footer>
+  <script src="contact.js"></script>
+
+</body>
+</html>
